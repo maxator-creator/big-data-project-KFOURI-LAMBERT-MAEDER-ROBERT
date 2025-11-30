@@ -1,3 +1,9 @@
+# Ignorer le dossier complet des données
+imdb_data/
+
+# Au cas où, ignorer aussi tous les fichiers .tsv
+*.tsv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
