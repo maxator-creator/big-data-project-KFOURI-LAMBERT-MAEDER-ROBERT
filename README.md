@@ -74,6 +74,7 @@ Role: Streaming script state file.
 Description: Stores the stream bookmark (`latest_event_id`) so the script knows where to resume after a disconnect.
 
 How to Run the Project
+
 📦 Dependencies
 Make sure you have the required Python libraries installed:
 
@@ -111,3 +112,4 @@ Stop the script:
 
 
 -Press Ctrl+C in the terminal. The script saves a final state and exits gracefully.
+
