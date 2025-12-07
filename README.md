@@ -21,11 +21,11 @@ Role: Core of the batch analysis.
 
 Description: This Jupyter notebook contains all Python code (using Pandas) to:
 
-- Download (if needed), decompress and load IMDb .tsv data files.
+- Download, decompress and load IMDb .tsv data files.
 - Clean and analyze the data.
 - Answer the analytical questions posed in the first part of the project.
 
-wiki_stream_processor.py (or wiki_stream_processor_v4_FIXED.py)
+wiki_stream_processor.py
 
 Role: Core of the streaming analysis.
 
@@ -74,6 +74,7 @@ Role: Streaming script state file.
 Description: Stores the stream bookmark (`latest_event_id`) so the script knows where to resume after a disconnect.
 
 How to Run the Project
+
 📦 Dependencies
 Make sure you have the required Python libraries installed:
 
@@ -81,17 +82,6 @@ Bash:
 pip install pandas requests requests-sse
 
 Part 1: Batch Analysis (Notebook)
-Get the data:
-
--Download the required .tsv files from the IMDb Datasets page.
-
--The files used in this notebook are: `title.basics.tsv`, `title.ratings.tsv`, `name.basics.tsv`, `title.principals.tsv`, `title.crew.tsv`, `title.episode.tsv`, and `title.akas.tsv`.
-
-Organize the files:
-
--Create a folder named `imdb_data` at the project root.
-
--Place all decompressed .tsv files in that folder.
 
 Run the notebook:
 
@@ -120,4 +110,6 @@ You can inspect `wiki_metrics.json` and `wiki_alerts.log` (if any alerts occurre
 
 Stop the script:
 
+
 -Press Ctrl+C in the terminal. The script saves a final state and exits gracefully.
+
